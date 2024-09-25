@@ -57,11 +57,9 @@ const initApiRoutes = (app) => {
     router.delete("/roles/delete", rolesController.deleteFunc);
     router.put("/roles/update", rolesController.updateFunc);
 
-    // Orders
+    // Orders Invoices Inventory
     router.get("/orders/read", ordersController.readFunc);
     router.post("/orders/create", ordersController.createFunc);
-    router.delete("/orders/delete", ordersController.deleteFunc);
-    router.put("/orders/update", ordersController.updateFunc);
 
     return app.use("/api/v1/", router);
 };
